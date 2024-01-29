@@ -1,0 +1,92 @@
+<!doctype html>
+<html dir="ltr" lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>유부초밥</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        var container = $('#card-container');
+        var cards = container.children().toArray();
+        shuffleArray(cards);
+        container.html('');
+        cards.forEach(function(card) {
+            container.append(card);
+        });
+    });
+
+    function shuffleArray(array) {
+        for (var i = array.length - 1; i > 0; i--) {
+            var j = Math.floor(Math.random() * (i + 1));
+            var temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
+        }
+    }
+    </script>
+</head>
+<body>
+<img src="res/777-1.jpeg" class="img-fluid" style="height: 300px; width: 100%; object-fit: cover;">
+<div class="container text-center">
+    <div class="row">
+        <div class="col-md-3 col-1"></div>
+        <div class="col-md-6 col-10">
+            <h1 class="m-4 pt-4">777-1</h1>
+            <p>소정룸에서의 청춘을 뒤로한채 이제 남은것은 쉰내뿐인 유부초밥들의 online man cave를 꿈꾸며..</p>
+            <div class="row mt-4 pt-4" id="card-container">
+                <div class="col-md-6 col-12">
+                    <div class="card mb-4">
+                        <img class="card-img-top" src="res-profile/관대하.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">최상무</h5>
+                            <p class="card-text">글로벌 No1 대기업 임원</p>
+                            <a href="https://aws.amazon.com" class="btn btn-primary">Visit homepage</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="card mb-4">
+                        <img class="card-img-top" src="res-profile/박포토.jpeg">
+                        <div class="card-body">
+                            <h5 class="card-title">박포토</h5>
+                            <p class="card-text">늙고 병든 노인 사진사</p>
+                            <a href="https://naver.me/5bXizhib" class="btn btn-primary">홈페이지 방문</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="card mb-4">
+                        <img class="card-img-top" src="res-profile/박부죠.jpeg">
+                        <div class="card-body">
+                            <h5 class="card-title">박부죠</h5>
+                            <p class="card-text">한국 No1 대기업 임원</p>
+                            <a href="https://www.naver.com/" class="btn btn-primary">홈페이지 방문</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="card mb-4">
+                        <img class="card-img-top" src="res-profile/cbot.jpeg">
+                        <div class="card-body">
+                            <h5 class="card-title">Greg shin</h5>
+                            <p class="card-text">프랑크푸르트 외노자</p>
+                            <a href="https://chat.openai.com/" class="btn btn-primary">Besuch zu Hause</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4 mb-4 pt-4 pb-4">
+                <div class="col-md-4 col-12"><img src="res/sex1.gif" class="img-fluid"></div>
+                <div class="col-md-4 col-12"><img src="res/fbi.png" class="img-fluid"></div>
+                <div class="col-md-4 col-12"><img src="res/sex2.gif" class="img-fluid"></div>                
+            </div>
+        </div>
+        <div class="col-md-3 col-1"></div>
+    </div>
+</div>
+</body>
+</html>
